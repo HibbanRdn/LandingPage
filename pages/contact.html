@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | VisionAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-md fixed top-0 w-full z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="../index.html" class="flex items-center gap-3 text-2xl font-bold text-navy-800 transition hover:opacity-80">
+                    <img src="../assets/logo/logofixed.svg" alt="VisionAI" class="h-8 w-auto">
+                    <span class="text-2xl font-bold text-black">VisionAI</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-800 flex items-center gap-2">
+                        <i class="fas fa-home text-sm"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-800 flex items-center gap-2">
+                        <i class="fas fa-info-circle text-sm"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="services.html" class="nav-link text-gray-700 hover:text-blue-800 flex items-center gap-2">
+                        <i class="fas fa-cogs text-sm"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="contact.html" class="nav-link active text-blue-800 font-semibold flex items-center gap-2">
+                        <i class="fas fa-envelope text-sm"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+            <!-- Tombol nav mobile -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-800">
+                <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="../index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-home mr-2"></i>Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-info-circle mr-2"></i>About</a>
+            <a href="services.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-cogs mr-2"></i>Services</a>
+            <a href="contact.html" class="block px-4 py-2 text-blue-800 font-semibold"><i class="fas fa-envelope mr-2"></i>Contact</a>
+        </div>
+   </nav>
+
+    <!-- Hero Section - Reduced Height -->
+    <section class="gradient-bg text-white pt-24 pb-16 flex flex-col justify-center items-center text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold fade-in-up mb-4">Hubungi Kami</h1>
+            <p class="text-base md:text-lg text-gray-200 leading-relaxed fade-in-up delay-1">
+                Kami siap membantu Anda memahami dan menerapkan solusi AI yang sesuai dengan kebutuhan bisnis Anda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Cards Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="contact-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center fade-in-up delay-1">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Telepon</h3>
+                    <p class="text-gray-600 text-sm mb-2">Hubungi kami langsung</p>
+                    <a href="tel:+6281234567890" class="text-blue-600 font-semibold hover:text-blue-800">
+                        +62-858-lainnya kapan-kapan
+                    </a>
+                </div>
+
+                <div class="contact-card bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl text-center fade-in-up delay-2">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Email</h3>
+                    <p class="text-gray-600 text-sm mb-2">Kirim email ke kami</p>
+                    <a href="mailto:info@visionai.id" class="text-green-600 font-semibold hover:text-green-800">
+                        info@unila.ac.id
+                    </a>
+                </div>
+
+                <div class="contact-card bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl text-center fade-in-up delay-3">
+                    <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Lokasi</h3>
+                    <p class="text-gray-600 text-sm mb-2">Kunjungi kantor kami</p>
+                    <p class="text-purple-600 font-semibold">Bandar Lampung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+            <!-- Form -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg slide-in-left">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Kirim Pesan</h2>
+                <p class="text-gray-600 mb-6">Isi formulir di bawah dan kami akan segera menghubungi Anda</p>
+                
+                <form action="#" method="POST" class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-user text-blue-600 mr-2"></i>Nama Lengkap
+                        </label>
+                        <input 
+                            type="text" 
+                            name="nama" 
+                            required 
+                            placeholder="Masukkan nama lengkap Anda"
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:outline-none"
+                        >
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-envelope text-blue-600 mr-2"></i>Email
+                        </label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            required 
+                            placeholder="email@contoh.com"
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:outline-none"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-phone text-blue-600 mr-2"></i>Nomor Telepon (Opsional)
+                        </label>
+                        <input 
+                            type="tel" 
+                            name="telepon" 
+                            placeholder="+62-895-9999-0110"
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:outline-none"
+                        >
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-comment text-blue-600 mr-2"></i>Pesan
+                        </label>
+                        <textarea 
+                            name="pesan" 
+                            rows="5" 
+                            required 
+                            placeholder="Ceritakan kebutuhan bisnis Anda..."
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:outline-none resize-none"
+                        ></textarea>
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        class="submit-button w-full bg-[#0a1f44] text-white font-semibold py-4 rounded-lg relative z-10">
+                        <span href="mailto:hibbanrdn@gmail.com" class="relative z-10 flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Kirim Pesan</span>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Info -->
+            <div class="slide-in-right">
+                <div class="bg-white p-8 rounded-2xl shadow-lg mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Kantor Pusat</h2>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Alamat</h3>
+                                <p class="text-gray-600">Jl. Prof. Dr. Ir. Sumantri Brojonegoro No.1, Kota Bandar Lampung, Lampung</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-green-100 p-3 rounded-lg">
+                                <i class="fas fa-clock text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Jam Operasional</h3>
+                                <p class="text-gray-600">Senin - Jumat: 09:00 - 17:00<br>Sabtu - Minggu: Tutup</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-purple-100 p-3 rounded-lg">
+                                <i class="fas fa-phone text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">Kontak</h3>
+                                <p class="text-gray-600">
+                                    <a href="tel:+6281234567890" class="hover:text-blue-600">+62-858-lainnya kapan-kapan</a><br>
+                                    <a href="mailto:info@visionai.id" class="hover:text-blue-600">info@unila.ac.id</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Map -->
+                <div class="map-container fade-in-up delay-4">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.1278425460237!2d105.24253662461564!3d-5.3618283902861315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c549fcafffff%3A0x47fcb67720ed4a2c!2sLaboratorium%20Teknik%20Komputer%20Universitas%20Lampung!5e0!3m2!1sid!2sid!4v1762671343458!5m2!1sid!2sid"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a1f44] text-gray-300 py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <img src="../assets/logo/logofixed.svg"" alt="VisionAI" class="h-8 w-auto">
+                    <span class="text-2xl font-bold text-white">VisionAI</span>
+                </div>
+                <p class="text-gray-400 mb-6">&copy; 2025 VisionAI. All rights reserved.</p>
+                <div class="flex justify-center gap-6">
+                    <a href="https://www.linkedin.com/school/universitaslampung/" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://x.com/unila_base?s=20" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/official_unila?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/contact.js"></script>
+
+</body>
+</html>
